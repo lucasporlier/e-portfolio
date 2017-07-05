@@ -42,6 +42,10 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+article a {
+    color: #56a9e1;
+}
+
 /* Box Model */
 
 *, *:before, *:after {
@@ -741,9 +745,8 @@ body {
 /* Basic */
 
 body {
-	background-image: url("images/overlay.png"), url("images/bg.jpg");
-	background-repeat: repeat, no-repeat;
-	background-size: auto, 100% 100%;
+    background: url("images/overlay.png"), url("images/bg.jpg") repeat, no-repeat;
+    background-size: auto, 100% 100%;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
 	color: #cfcfcf;
@@ -1054,7 +1057,7 @@ ol.default li {
 #nav a {
 	position: relative;
 	display: inline-block;
-	color: #333333;
+    color: #333333;
 	width: 1em;
 	height: 1em;
 	line-height: 0.9em;
