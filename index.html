@@ -1,18 +1,20 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Amazing e-portfolio</title>
+    <title>ePortfolio</title>
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <link rel="icon" href="images/favicon.ico" type="image/ico"/>
+
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--[if lte IE 8]>
-    <script src="assets/js/ie/html5shiv.js"></script>
-    <![endif]-->
+    <link rel="alternate" hreflang="x-default" href="index.html"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"/>
     </noscript>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script>
+    <![endif]-->
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/css/ie8.css"/>
     <![endif]-->
@@ -24,10 +26,21 @@
 
     <!-- Nav -->
     <nav id="nav">
-        <a href="#me" class="icon fa-home active"><span>Home</span></a>
-        <a href="#work" class="icon fa-folder"><span>Work</span></a>
-        <a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-        <a href="" class="icon fa-file-text"><span>Resume</span></a>
+        <a href="#me" class="icon fa-home active">
+            <span class="en">Home</span>
+            <span class="fr">Accueil</span>
+        </a>
+        <a href="#work" class="icon fa-folder">
+            <span class="en">Work</span>
+            <span class="fr">Travail</span>
+        </a>
+        <a href="#contact" class="icon fa-envelope">
+            <span>Contact</span>
+        </a>
+        <a href="" class="icon fa-file-text">
+            <span class="en">Resume</span>
+            <span class="fr">CV</span>
+        </a>
     </nav>
 
     <!-- Main -->
@@ -37,11 +50,15 @@
         <article id="me" class="panel">
             <header>
                 <h1>Lucas Porlier-Pagnon</h1>
-                <p>DevOps Engineer</p>
+                <p class="en">DevOps Engineer</p>
+                <p class="fr">Ingénieur DevOps</p>
             </header>
             <a href="#work" class="jumplink pic">
                 <img src="images/me.jpg" alt="profile picture"/>
-                <span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+                <span class="arrow icon fa-chevron-right">
+                    <span class="en">See my work</span>
+                    <span class="fr">Voir mon travail</span>
+                </span>
             </a>
         </article>
 
@@ -50,40 +67,55 @@
             <header>
                 <h2>Work</h2>
             </header>
-            <!-- TODO French version
-            <p>
-              Cette page présente plusieurs fragments de mes réalisations, notamment les travaux qu'il m'est permit de présenter.
-              Il s’agit d’un rassemblement de photos, liens, publications, parmi d’autres supports ;
-              ceux-ci sont énumérés dans l’ordre dans lequel je les (re)trouve, pour ne pas dire en vrac.
-            </p> -->
-            <p>
+            <p class="en">
                 I apologize in advance to the English readers, for my work is mostly in French.
                 I've always worked in french schools, companies, and if my code is in English,
                 final consumers are not, as well as documentation and interfaces. <br>
                 What follows is a patchwork of my activities as a tech-addict, a developer, and basically,
                 fragments of everything I've ever accomplished as a computer guy.
             </p>
+            <p class="fr">
+                Cette page présente plusieurs fragments de mes réalisations, notamment les travaux qu'il m'est permit de
+                présenter.
+                Il s’agit d’un rassemblement de photos, liens, publications, parmi d’autres supports ;
+                ceux-ci sont énumérés dans l’ordre dans lequel je les (re)trouve, pour ne pas dire en vrac.
+            </p>
             <section>
                 <div class="row">
                     <div class="4u 12u$(mobile)">
                         <a href="Rapport d'Activité.pdf" class="image fit">
-                            <img src="images/Rapport.JPG" alt="Activity Report">Work at Galeries Lafayette</a>
+                            <img src="images/Rapport.JPG" class="fr" alt="Activity Report">
+                            <span class="en">Work at Galeries Lafayette</span>
+                            <span class="fr">Travail aux Galeries Lafayette</span>
+                        </a>
                     </div>
                     <div class="4u 12u$(mobile)">
                         <a href="https://lucasporlier.github.io/TMNT/index.html" class="image fit">
-                            <img src="images/TMNT.png" alt="Website mockup">Nanny Express Project</a>
+                            <img src="images/TMNT.png" class="fr" alt="Website mockup">
+                            <span class="en">Nanny Express Project</span>
+                            <span class="fr">Projet NounouExpress</span>
+                        </a>
                     </div>
                     <div class="4u$ 12u$(mobile)">
-                        <a href="pcpartpicker.html" class="image fit">
-                            <img src="images/pcpartpicker.jpg" alt="pcpartbuilder logo">My First PC Build</a>
+                        <a href="pcbuild.html" class="image fit">
+                            <img src="images/pcpartpicker.jpg" alt="pcpartbuilder logo">
+                            <span class="en">My First PC Build</span>
+                            <span class="fr">Mon premier PC monté</span>
+                        </a>
                     </div>
                     <div class="4u 12u$(mobile)">
                         <a href="https://github.com/lucasporlier/PJS4" class="image fit">
-                            <img src="images/RolePlay.jpg" alt="RPG Map">IUT Android Project</a>
+                            <img src="images/RolePlay.jpg" class="fr" alt="RPG Map">
+                            <span class="en">IUT Android Project</span>
+                            <span class="fr">Projet Android pour l'IUT</span>
+                        </a>
                     </div>
                     <div class="4u 12u$(mobile)">
                         <a href="https://davehakkens.nl/community/introduction/" class="image fit">
-                            <img src="images/Phoneblocks.jpg" alt="">Activist in a community</a>
+                            <img src="images/Phoneblocks.jpg" alt="">
+                            <span class="en">Activist in a community</span>
+                            <span class="fr">Bénévole sur des projets</span>
+                        </a>
                     </div>
                     <div class="4u$ 12u$(mobile)">
                         <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
@@ -110,39 +142,40 @@
             </section>
         </article>
 
-      <!-- Contact -->
-      <article id="contact" class="panel">
-        <header>
-          <h2>Contact Me</h2>
-        </header>
-        <form action="https://formspree.io/lucas.porlier@live.fr" method="post">
-          <div>
-            <div class="row">
-              <div class="6u 12u$(mobile)">
-                <input type="text" name="name" placeholder="Name"/>
-              </div>
-              <div class="6u$ 12u$(mobile)">
-                <input type="text" name="email" placeholder="Email"/>
-              </div>
-              <div class="12u$">
-                <input type="text" name="_subject" placeholder="Subject"/>
-              </div>
-              <div class="12u$">
-                <textarea name="message" placeholder="Message" rows="8"></textarea>
-              </div>
-            </div>
-            <div class="12u$">
-              <input type="text" name="_gotcha" style="display:none" title="captcha"/>
-              <input type="hidden" name="_next" value="//site.io/thanks.html"/>
-            </div>
-            <div class="12u$">
-              <input type="submit" value="Send Message"/>
-            </div>
-          </div>
-      </form>
-    </article>
-  </div>
-
+        <!-- Contact -->
+        <article id="contact" class="panel">
+            <header>
+                <h2>Contact Me</h2>
+            </header>
+            <form action="https://formspree.io/lucas.porlier@live.fr" method="post">
+                <div>
+                    <div class="row">
+                        <div class="6u 12u$(mobile)">
+                            <input type="text" name="name" class="en" placeholder="Name"/>
+                            <input type="text" name="name" class="fr" placeholder="Nom"/>
+                        </div>
+                        <div class="6u$ 12u$(mobile)">
+                            <input type="text" name="email" placeholder="Email"/>
+                        </div>
+                        <div class="12u$">
+                            <input type="text" name="_subject" class="en" placeholder="Subject"/>
+                            <input type="text" name="_subject" class="fr" placeholder="Objet"/>
+                        </div>
+                        <div class="12u$">
+                            <textarea name="message" placeholder="Message" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="12u$">
+                        <input type="text" name="_gotcha" style="display:none" title="captcha"/>
+                        <input type="hidden" name="_next" value="//site.io/thanks.html"/>
+                    </div>
+                    <div class="12u$">
+                        <input type="submit" value="Envoyer / Send Message"/>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </div>
 </div>
 
 <!-- Footer -->
@@ -152,19 +185,19 @@
         <a href="https://www.facebook.com/porlier.lucas" class="icon fa-facebook"></a>
         <a href="https://github.com/lucasporlier" class="icon fa-github"></a>
         <a href="https://bitbucket.org/lucasporlier/" class="icon fa-bitbucket"></a>
-        <a href="mailto:lucas.porlier@live.fr?subject=Meeting&amp;body=Hello%20Lucas,%0D%0DI'd%20like%20to%20present%20to%20you%20a%20project,%20and%20for%20that%20matter%20to%20agree%20on%20a%20meeting."
+        <a href="mailto:lucas.porlier@live.fr" class="icon fa-envelope-square"></a>
+        <!--<a href="mailto:lucas.porlier@live.fr?subject=Meeting&amp;body=Hello%20Lucas,%0D%0DI'd%20like%20to%20present%20to%20you%20a%20project,%20and%20for%20that%20matter%20to%20agree%20on%20a%20meeting."
            class="icon fa-envelope-square"></a>
-        <!--<a href="mailto:lucas.porlier@live.fr?subject=Rendez-vous&body=Bonjour%20Lucas,%0D%0DJ'aimerais%20vous%20présenter%20un%20projet,%20et%20pour%20cela%20convenir%20d'un%20rendez-vous%20avec%20vous." class="icon fa-envelope-square"></a>-->
-        <!--<a href="" class="icon fa-"></a>-->
-    </h2><br>
-    <ul class="copyright">
-        <!-- <li>&copy; Lucas Porlier-Pagnon</li><li>Design: Lucas Porlier-Pagnon</li> -->
-        <li><a href="#" class="icon fa-flag"> English</a></li>
-        <li><a href="" class="icon fa-flag-o"> Français</a></li>
-        <!-- TODO French version of the website with inverted flag icons like so
-        <li><a href="" class="icon fa-flag-o"> English</a></li>
-        <li><a href="#" class="icon fa-flag"> Français</a></li>
-      -->
+        <a href="mailto:lucas.porlier@live.fr?subject=Rendez-vous&body=Bonjour%20Lucas,%0D%0DJ'aimerais%20vous%20présenter%20un%20projet,%20et%20pour%20cela%20convenir%20d'un%20rendez-vous%20avec%20vous."
+           class="icon fa-envelope-square"></a>-->
+    </h2><br/>
+    <ul class="copyright en">
+        <li><a href="" class="icon fa-flag"> English</a></li>
+        <li><a href="#" class="icon fa-flag-o"> Français</a></li>
+    </ul>
+    <ul class="copyright fr">
+        <li><a href="#" class="icon fa-flag-o"> English</a></li>
+        <li><a href="" class="icon fa-flag"> Français</a></li>
     </ul>
 </div>
 
