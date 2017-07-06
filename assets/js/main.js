@@ -235,3 +235,11 @@
     });
 
 })(jQuery);
+
+function english() {
+    document.documentElement.setAttribute('lang', 'en');
+}
+
+function french() {
+    document.documentElement.setAttribute('lang', 'fr');
+}

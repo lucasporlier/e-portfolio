@@ -1124,6 +1124,10 @@ ol.default li {
 	transition: color .25s ease-in-out;
 }
 
+#footer .bigger{
+    font-size: 200%;
+}
+
 #footer a:hover {
 	color: black;
 }
@@ -1239,7 +1243,7 @@ ol.default li {
 	}
 
 	#wrapper.tall {
-		padding-bottom: 6em;
+		padding-bottom: 0em;
 	}
 
 	/* Nav */

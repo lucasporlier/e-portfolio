@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>ePortfolio</title>
     <link rel="shortcut icon" href="images/favicon.ico"/>
@@ -26,21 +26,19 @@
 
     <!-- Nav -->
     <nav id="nav">
-        <a href="#me" class="icon fa-home active">
-            <span class="en">Home</span>
-            <span class="fr">Accueil</span>
-        </a>
-        <a href="#work" class="icon fa-folder">
-            <span class="en">Work</span>
-            <span class="fr">Travail</span>
-        </a>
-        <a href="#contact" class="icon fa-envelope">
-            <span>Contact</span>
-        </a>
-        <a href="" class="icon fa-file-text">
-            <span class="en">Resume</span>
-            <span class="fr">CV</span>
-        </a>
+        <div class="fr">
+            <a href="#me" class="icon fa-home active"><span>Accueil</span></a>
+            <a href="#work" class="icon fa-folder"><span>Travail</span></a>
+            <a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+            <a href="#" class="icon fa-file-text"><span>CV</span></a>
+            <!-- TODO Un CV digne de ce nom -->
+        </div>
+        <div class="en">
+            <a href="#me" class="icon fa-home active"><span>Home</span> </a>
+            <a href="#work" class="icon fa-folder"><span>Work</span> </a>
+            <a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+            <a href="#" class="icon fa-file-text"><span>Resume</span></a>
+        </div>
     </nav>
 
     <!-- Main -->
@@ -65,7 +63,8 @@
         <!-- Work -->
         <article id="work" class="panel" style="display: none;">
             <header>
-                <h2>Work</h2>
+                <h2 class="en">Work</h2>
+                <h2 class="fr">Travail</h2>
             </header>
             <p class="en">
                 I apologize in advance to the English readers, for my work is mostly in French.
@@ -145,7 +144,8 @@
         <!-- Contact -->
         <article id="contact" class="panel">
             <header>
-                <h2>Contact Me</h2>
+                <h2 class="en">Contact Me</h2>
+                <h2 class="fr">Contactez-moi</h2>
             </header>
             <form action="https://formspree.io/lucas.porlier@live.fr" method="post">
                 <div>
@@ -180,24 +180,21 @@
 
 <!-- Footer -->
 <div id="footer">
-    <h2>
+    <div class="bigger">
         <a href="https://www.linkedin.com/in/lucas-porlier/" class="icon fa-linkedin-square"></a>
         <a href="https://www.facebook.com/porlier.lucas" class="icon fa-facebook"></a>
         <a href="https://github.com/lucasporlier" class="icon fa-github"></a>
         <a href="https://bitbucket.org/lucasporlier/" class="icon fa-bitbucket"></a>
         <a href="mailto:lucas.porlier@live.fr" class="icon fa-envelope-square"></a>
-        <!--<a href="mailto:lucas.porlier@live.fr?subject=Meeting&amp;body=Hello%20Lucas,%0D%0DI'd%20like%20to%20present%20to%20you%20a%20project,%20and%20for%20that%20matter%20to%20agree%20on%20a%20meeting."
-           class="icon fa-envelope-square"></a>
-        <a href="mailto:lucas.porlier@live.fr?subject=Rendez-vous&body=Bonjour%20Lucas,%0D%0DJ'aimerais%20vous%20présenter%20un%20projet,%20et%20pour%20cela%20convenir%20d'un%20rendez-vous%20avec%20vous."
-           class="icon fa-envelope-square"></a>-->
-    </h2><br/>
+    </div>
+    <br/>
     <ul class="copyright en">
-        <li><a href="" class="icon fa-flag"> English</a></li>
-        <li><a href="#" class="icon fa-flag-o"> Français</a></li>
+        <li><a onclick="english();" href="#" class="icon fa-flag"> English</a></li>
+        <li><a onclick="french();" href="#" class="icon fa-flag-o"> Français</a></li>
     </ul>
     <ul class="copyright fr">
-        <li><a href="#" class="icon fa-flag-o"> English</a></li>
-        <li><a href="" class="icon fa-flag"> Français</a></li>
+        <li><a onclick="english();" href="#" class="icon fa-flag-o"> English</a></li>
+        <li><a onclick="french();" href="#" class="icon fa-flag"> Français</a></li>
     </ul>
 </div>
 
