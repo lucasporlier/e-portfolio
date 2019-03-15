@@ -1,41 +1,42 @@
 /* Wrapper */
 
-#wrapper {
-    opacity: 1.0;
-}
+	#wrapper {
+		opacity: 1 !important;
+	}
 
 /* Nav */
 
-#nav {
-    margin-top: 4em;
-}
+	#nav a {
+		opacity: 1.0;
+	}
 
-#nav a {
-    opacity: 1.0;
-}
+		#nav a:before, #nav a:after {
+			display: none;
+		}
 
-#nav a:before, #nav a:after {
-    display: none;
-}
+		#nav a span {
+			top: 0;
+			opacity: 1.0;
+		}
 
-#nav a span {
-    top: 0;
-    opacity: 1.0;
-}
+			#nav a span:after {
+				display: none;
+			}
 
-#nav a span:after {
-    display: none;
-}
+/* Main */
 
-/* Panels */
-
-#main {
-    background: none;
-    box-shadow: none;
-}
+	#main {
+		background: none;
+		box-shadow: none;
+	}
 
 .panel {
     position: relative;
     background: #34495e;
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+	margin-bottom: 2em;
 }
+
+			#main > .panel:last-child {
+				margin-bottom: 0;
+			}
